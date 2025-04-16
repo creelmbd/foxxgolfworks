@@ -6,22 +6,12 @@
     <title>Shop - Foxx Golf Works</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Include JavaScript file -->
+    <script src="scripts/include.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="./imgs/logo.PNG" alt="Foxx Golf Works Logo" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="builds.html">Club Builds</a></li>
-                <li><a href="products.html" class="active">Shop</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
 
     <main>
         <div class="page-container">
@@ -42,7 +32,7 @@
             <div class="products-container">
                 <!-- Shaft Product -->
                 <div class="product-item" data-category="shafts">
-                    <img src="./imgs/logo.PNG" alt="Premium Driver Shaft" class="product-image">
+                    <img src="imgs/logo.PNG" alt="Premium Driver Shaft" class="product-image">
                     <div class="product-info">
                         <h3>Fujikura Ventus Blue Driver Shaft</h3>
                         <p class="product-specs">6S (Stiff) | 65g | Mid Launch/Low Spin</p>
@@ -54,7 +44,7 @@
 
                 <!-- Grip Product -->
                 <div class="product-item" data-category="grips">
-                    <img src="./imgs/logo.PNG" alt="Golf Pride MCC Plus4 Grips" class="product-image">
+                    <img src="imgs/logo.PNG" alt="Golf Pride MCC Plus4 Grips" class="product-image">
                     <div class="product-info">
                         <h3>Golf Pride MCC Plus4 Grips</h3>
                         <p class="product-specs">Standard Size | Set of 13 | Black/Grey</p>
@@ -66,7 +56,7 @@
 
                 <!-- Club Head Product -->
                 <div class="product-item" data-category="heads">
-                    <img src="./imgs/logo.PNG" alt="Forged Cavity Back Iron Heads" class="product-image">
+                    <img src="imgs/logo.PNG" alt="Forged Cavity Back Iron Heads" class="product-image">
                     <div class="product-info">
                         <h3>Miura CB-301 Iron Heads</h3>
                         <p class="product-specs">4-PW | Right Handed | Satin Finish</p>
@@ -78,7 +68,7 @@
 
                 <!-- Accessory Product -->
                 <div class="product-item" data-category="accessories">
-                    <img src="./imgs/logo.PNG" alt="Digital Swing Weight Scale" class="product-image">
+                    <img src="imgs/logo.PNG" alt="Digital Swing Weight Scale" class="product-image">
                     <div class="product-info">
                         <h3>Foxx Digital Swing Weight Scale</h3>
                         <p class="product-specs">LCD Display | 0.25 Increment Accuracy</p>
@@ -90,7 +80,7 @@
 
                 <!-- Kit Product -->
                 <div class="product-item" data-category="kits">
-                    <img src="./imgs/logo.PNG" alt="Complete Driver Build Kit" class="product-image">
+                    <img src="imgs/logo.PNG" alt="Complete Driver Build Kit" class="product-image">
                     <div class="product-info">
                         <h3>Custom Driver Build Kit</h3>
                         <p class="product-specs">Adjustable Head | Premium Shaft | Tour Grip</p>
@@ -102,7 +92,7 @@
 
                 <!-- Shaft Product -->
                 <div class="product-item" data-category="shafts">
-                    <img src="./imgs/logo.PNG" alt="True Temper Dynamic Gold Iron Shafts" class="product-image">
+                    <img src="imgs/logo.PNG" alt="True Temper Dynamic Gold Iron Shafts" class="product-image">
                     <div class="product-info">
                         <h3>True Temper Dynamic Gold 120 Shafts</h3>
                         <p class="product-specs">S300 (Stiff) | Set of 8 | .355 Taper Tip</p>
@@ -112,41 +102,7 @@
                     </div>
                 </div>
 
-                <!-- Grip Product -->
-                <div class="product-item" data-category="grips">
-                    <img src="./imgs/logo.PNG" alt="SuperStroke Putter Grip" class="product-image">
-                    <div class="product-info">
-                        <h3>SuperStroke Traxion Pistol GT 1.0</h3>
-                        <p class="product-specs">Midsize | 58g | Black/Red</p>
-                        <div class="product-price">$29.99</div>
-                        <p class="product-description">Advanced putter grip with no-taper technology and multi-zone Traxion surface for improved feel and stroke control.</p>
-                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Accessory Product -->
-                <div class="product-item" data-category="accessories">
-                    <img src="./imgs/logo.PNG" alt="Epoxy Kit" class="product-image">
-                    <div class="product-info">
-                        <h3>Pro Club Building Epoxy Kit</h3>
-                        <p class="product-specs">2-Part Epoxy | 4oz Total | 24hr Cure</p>
-                        <div class="product-price">$24.99</div>
-                        <p class="product-description">Professional-grade two-part epoxy for secure club head installation. Includes mixing cups, stir sticks, and applicator.</p>
-                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Kit Product -->
-                <div class="product-item" data-category="kits">
-                    <img src="./imgs/logo.PNG" alt="Wedge Building Kit" class="product-image">
-                    <div class="product-info">
-                        <h3>Custom Wedge Building Kit</h3>
-                        <p class="product-specs">52°, 56°, 60° | S400 Shafts | Tour Grips</p>
-                        <div class="product-price">$499.99</div>
-                        <p class="product-description">Complete wedge building kit with three precision-milled wedge heads, Dynamic Gold S400 shafts, and premium grips.</p>
-                        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
-                    </div>
-                </div>
+                <!-- More products... -->
             </div>
 
             <div class="pagination">
@@ -164,38 +120,8 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="./imgs/logo.PNG" alt="Foxx Golf Works Logo">
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="builds.html">Club Builds</a></li>
-                    <li><a href="products.html">Shop</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                <p><i class="fas fa-envelope"></i> info@foxxgolfworks.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Hamilton, Ohio</p>
-            </div>
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/foxx_golfworks/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Foxx Golf Works. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
 
     <script>
         // Simple filter functionality for products
