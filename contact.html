@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Foxx Golf Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./imgs/logo.PNG" alt="Foxx Golf Works Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="builds.html">Club Builds</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-container">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch for custom builds, fittings, or any questions about our services</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Inquiry Type</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="custom_build">Custom Club Build</option>
+                                <option value="fitting">Club Fitting</option>
+                                <option value="repair">Club Repair</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Our Workshop</span>
+                                <p>123 Golf Club Avenue, Hamilton, OH 45011</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Phone</span>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <p>info@foxxgolfworks.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Business Hours</span>
+                                <p>Monday-Friday: 9am-6pm</p>
+                                <p>Saturday: 10am-4pm</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appointment-section">
+                <h2>Book a Fitting or Consultation</h2>
+                <p>Schedule a personalized club fitting session or consultation with our expert team.</p>
+                <div class="appointment-options">
+                    <div class="appointment-option">
+                        <h3>Standard Fitting</h3>
+                        <p>60 minutes | Full swing analysis | Club recommendations</p>
+                        <div class="option-price">$99</div>
+                        <button class="btn btn-secondary">Schedule</button>
+                    </div>
+                    <div class="appointment-option">
+                        <h3>Comprehensive Fitting</h3>
+                        <p>2 hours | Full bag analysis | Custom build recommendations</p>
+                        <div class="option-price">$199</div>
+                        <button class="btn btn-secondary">Schedule</button>
+                    </div>
+                    <div class="appointment-option">
+                        <h3>Build Consultation</h3>
+                        <p>45 minutes | Component selection | Specifications review</p>
+                        <div class="option-price">$79</div>
+                        <button class="btn btn-secondary">Schedule</button>
+                    </div>
+                </div>
+                <p class="appointment-note">* Fitting fees applied as credit toward custom club purchases of $500 or more</p>
+            </div>
+
+            <div class="map-container">
+                <img src="./imgs/logo.PNG" alt="Map location of Foxx Golf Works" class="location-map">
+            </div>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does a custom club build take?</h3>
+                            <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most custom club builds are completed within 7-10 business days from the date of order confirmation. Complex builds or those requiring specialty components may take slightly longer. We'll provide an estimated completion date when you place your order.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need an appointment for club repairs?</h3>
+                            <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While appointments are recommended for custom fitting sessions, walk-ins are welcome for basic repairs such as regripping or loft/lie adjustments. For more complex repairs, we suggest calling ahead to ensure a technician is available.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's your warranty policy on custom builds?</h3>
+                            <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>All custom builds come with a 30-day craftsmanship warranty. This covers any issues related to the build quality such as epoxy failures or ferrule separation. Component warranties are based on manufacturer policies, which we'll inform you of during the ordering process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can you match specifications from my current clubs?</h3>
+                            <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We can measure your current clubs and match or modify specifications as needed. This is often helpful when replacing a single club or wanting to maintain consistency across your set while upgrading components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/api/placeholder" alt="Foxx Golf Works Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="builds.html">Club Builds</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@foxxgolfworks.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Hamilton, Ohio</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Foxx Golf Works. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form submission handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // This would typically send to a server
+                    // For now, just show a success message
+                    alert('Thank you for your message! We will get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+
+            // FAQ toggle functionality
+            const faqItems = document.querySelectorAll('.faq-question');
+
+            faqItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const parent = this.parentElement;
+                    const icon = this.querySelector('.toggle-icon i');
+                    const answer = parent.querySelector('.faq-answer');
+
+                    // Toggle answer visibility
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+
+                    // Toggle icon
+                    if (icon.classList.contains('fa-plus')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
