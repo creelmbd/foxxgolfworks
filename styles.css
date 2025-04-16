@@ -699,3 +699,125 @@ footer {
   min-width: 200px;
   margin-bottom: 2rem;
 }
+
+/* Additional CSS for Index Page - Add to styles.css */
+
+/* Testimonials Section */
+.testimonials {
+  padding: 5rem 5%;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.testimonials h2 {
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.testimonials h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+.testimonial-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-content {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial-content::before,
+.testimonial-content::after {
+  content: '"';
+  font-size: 2rem;
+  color: var(--secondary-color);
+  position: absolute;
+  opacity: 0.3;
+}
+
+.testimonial-content::before {
+  top: -10px;
+  left: -15px;
+}
+
+.testimonial-content::after {
+  bottom: -30px;
+  right: -15px;
+}
+
+.testimonial-author h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-author p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 5rem 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./imgs/logo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.cta-section p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial {
+      padding: 1.5rem;
+  }
+
+  .cta-section h2 {
+      font-size: 2rem;
+  }
+
+  .cta-section p {
+      font-size: 1rem;
+  }
+}
