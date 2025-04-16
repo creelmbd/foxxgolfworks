@@ -99,7 +99,7 @@ nav ul li a.active::after {
 /* Hero Section */
 .hero {
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1920/1080');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/logo.PNG');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -281,7 +281,7 @@ footer {
 
 .footer-logo, .footer-links, .footer-contact, .footer-social {
   flex: 1;
-  min-width: 250px;
+  min-width: 200px;
   margin-bottom: 2rem;
 }
 
@@ -666,4 +666,36 @@ textarea {
   .builds-container, .products-container, .team-container {
       grid-template-columns: 1fr;
   }
+}
+
+/* Updated Footer CSS */
+footer {
+  background-color: var(--footer-color);
+  color: white;
+  padding: 3rem 5% 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Significantly reduced logo size and container */
+.footer-logo {
+  flex: 0 0 100px; /* Fixed width instead of flex-grow */
+  margin-bottom: 2rem;
+}
+
+.footer-logo img {
+  max-width: 60px; /* Much smaller logo */
+  height: auto;
+}
+
+/* Other footer elements */
+.footer-links, .footer-contact, .footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 2rem;
 }
